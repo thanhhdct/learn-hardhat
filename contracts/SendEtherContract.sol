@@ -5,6 +5,8 @@ import "hardhat/console.sol";
 
 contract SendEtherContract {
     address owner;
+    uint count = 0;
+    event Deposit(uint value, address from);
 
     constructor() {
         owner = msg.sender;
@@ -22,10 +24,13 @@ contract SendEtherContract {
         return address(this).balance;
     }
 
+    function emitEvent() public {
+        emit Deposit(count, owner);
+        count++;
+    }
+
     function getOwnerAddress() public view returns (address) {
         console.log(" ~ constructor ~ owner 2 %s:", owner);
         return owner;
     }
-
-    fallback() external payable {}
 }
