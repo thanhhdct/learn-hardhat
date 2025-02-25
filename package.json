@@ -9,6 +9,7 @@
   "author": "thanhdt",
   "license": "ISC",
   "devDependencies": {
+    "@nomicfoundation/hardhat-ignition-viem": "^0.15.9",
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "hardhat": "^2.22.18"
   }

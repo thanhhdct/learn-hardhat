@@ -7,7 +7,7 @@ const CountContractModule = buildModule("CountContractModule", (m) => {
   const countContract = m.contract("CountContract");
 
   // m.call(countContract, "decrease", [2]);
-  m.call(countContract, "increase", [m.getParameter("increaseValue")]);
+  // m.call(countContract, "increase", [m.getParameter("increaseValue")]);
   return { countContract };
 });
 
