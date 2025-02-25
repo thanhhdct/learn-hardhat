@@ -1,6 +1,6 @@
 import { HardhatUserConfig } from "hardhat/config";
-// import "@nomicfoundation/hardhat-toolbox";
-import "@nomicfoundation/hardhat-ignition-viem";
+import "@nomicfoundation/hardhat-toolbox";
+// import "@nomicfoundation/hardhat-ignition-viem";
 
 const { vars } = require("hardhat/config");
 
