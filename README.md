@@ -1,13 +1,11 @@
-# Sample Hardhat Project
+1. khởi tạo local network
+   
+   dùng lệnh ```npx hardhat node```
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+3. deploy một contract bất kì
+   
+   Trên một terminal khác:
+   ```npx hardhat ignition deploy ignition/modules/<fileName>```
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
-```
+Deploy thành công sẽ trả ra contract address
+![image](https://github.com/user-attachments/assets/5fb44d93-14b8-4de1-8ed7-657cf59dd984)
